@@ -52,9 +52,6 @@ export default function Product({ products }) {
                       {/* 구매옵션을 원하는 수량만큼 맞추기위해서 */}
                       <option>선택하세요</option>
                       {pd.options.map((option) => {
-                        if (option > 3) {
-                          option = option.slice(0, 3);
-                        }
                         return <option key={option}>{option}</option>;
                       })}
                     </select>
